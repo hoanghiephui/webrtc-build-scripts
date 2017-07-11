@@ -22,11 +22,15 @@ Hướng dẫn build webrtc cho Android trên MacOs
  
     VBoxManage clonehd "tên file máy ảo hiện tại.vmdk" "tên máy ảo sẽ đổi.vdi" --format vdi
  
- Ex: VBoxManage clonehd "ubuntu-xenial-16.04-cloudimg.vmdk" "ubuntu-xenial-16.04-cloudimg.vdi" --format vdi
+    Ex: VBoxManage clonehd "ubuntu-xenial-16.04-cloudimg.vmdk" "ubuntu-xenial-16.04-cloudimg.vdi" --format vdi
+ 
  tiến trình sẽ chạy từ 0-100%
  Sau đó bạn sẽ chạy lệnh để resize máy ảo đó bằng lệnh
+ 
     Ex: VBoxManage modifyhd ubuntu-xenial-16.04-cloudimg.vdi --resize 40000
+    
  Sau khi mọi thay đổi thành công, bạn cần mở VirtualBox để cấu hình chạy máy ảo với máy ảo mới mà bạn và tiến hành thêm bộ nhớ
+ 
  Xem thêm hướng dẫn tại :https://tuhrig.de/resizing-vagrant-box-disk-space/
  Sau khi hoàn tất các bước trên, tiến hành chạy máy ảo bằng lệnh
  
