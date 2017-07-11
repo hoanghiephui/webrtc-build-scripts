@@ -7,9 +7,13 @@ Hướng dẫn build webrtc cho Android trên MacOs
     
 * Clone repository này về máy.
 * Dùng terminal chạy máy ảo vagrant lên bằng lệnh
+
     vagrant up
+    
 * Sau đó đăng nhập vào máy ảo bằng lệnh
+
     vagrant ssh
+    
 * Tiếp theo chạy lệnh trên máy ảo để cài đặt OpenJava
 
 https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04
@@ -43,16 +47,16 @@ https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-ge
   
  * Bây giờ bạn cần tải về bộ mã nguồn Webrtc về
  
- git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+    git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
  
- export PATH=`pwd`/depot_tools:"$PATH"
+    export PATH=`pwd`/depot_tools:"$PATH"
  
-$ mkdir webrtc-checkout
-$ cd webrtc-checkout
-$ fetch --nohooks webrtc_android
-$ gclient sync
+    $ mkdir webrtc-checkout
+    $ cd webrtc-checkout
+    $ fetch --nohooks webrtc_android
+    $ gclient sync
  
 Bây giờ tất cả các nguồn và phụ thuộc được tải xuống, bạn có thể: tạo các tệp tin ninja với GN, xây dựng và tạo thư viện webrtc theo định dạng .aar trong một bước sử dụng một tập lệnh khá tiện lợi mà Google đã phát triển:
 
-$ cd src
-$ tools_webrtc/android/build_aar.py
+    $ cd src
+    $ tools_webrtc/android/build_aar.py
