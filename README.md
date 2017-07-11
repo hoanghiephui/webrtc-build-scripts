@@ -52,8 +52,11 @@ https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-ge
     export PATH=`pwd`/depot_tools:"$PATH"
  
     $ mkdir webrtc-checkout
+    
     $ cd webrtc-checkout
+    
     $ fetch --nohooks webrtc_android
+    
     $ gclient sync
  
 Bây giờ tất cả các nguồn và phụ thuộc được tải xuống, bạn có thể: tạo các tệp tin ninja với GN, xây dựng và tạo thư viện webrtc theo định dạng .aar trong một bước sử dụng một tập lệnh khá tiện lợi mà Google đã phát triển:
