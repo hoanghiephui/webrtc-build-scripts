@@ -8,6 +8,7 @@ Hướng dẫn build webrtc cho Android trên MacOs
 * Sau đó đăng nhập vào máy ảo bằng lệnh
     vagrant ssh
 * Tiếp theo chạy lệnh trên máy ảo để cài đặt OpenJava
+https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04
 
     sudo apt-get install default-jre
     sudo apt-get install default-jdk
